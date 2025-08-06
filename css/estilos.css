@@ -337,6 +337,7 @@ Slider che
 }
 
 .slider-frame ul {
+  list-style-type: none; 
   display: flex;
   padding: 0;
   margin: 0;
@@ -350,6 +351,7 @@ Slider che
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
 }
 
 .slider-frame img.pilotos {
@@ -358,6 +360,11 @@ Slider che
 	object-fit: cover;
 	border-radius: 10px; /* opcional, para bordes redondeados */
 }
+
+.slider-frame ul li::before {
+  content: none !important;
+}
+
 
 @keyframes slide {
   0% { margin-left: 0%; }
