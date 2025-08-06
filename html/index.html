@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Rookie</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>F1 Rookie</h1>
+        <nav class="navbar" id="inicio">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="../html/pilotos.html">Pilotos</a></li>
+                <li><a href="../html/escuderias.html">Escuderías</a></li>
+                <li><a href="../html/estrategias.html">Estrategias</a></li>
+                <li><a href="../html/reglas.html">Reglas</a></li>
+                <li><a href="../html/circuitos.html">Circuitos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Bienvenido a la F1 Fan Page</h1>
+            <p>Explorá pilotos, escuderías, circuitos y más sobre el apasionante mundo de la Fórmula 1.</p>
+        </section>
+
+        <section class="galeria">
+            <div class="grid-container">
+                <p>Explorá las fotografías destacadas del mes</p>
+                <div class="grid">
+                    <div class="img-card" onclick="abrirModal('../imgs/1.jpg', 'Ferrari saliendo de pits')">
+                        <img src="../imgs/1.jpg" alt="Imagen 1" />
+                        <p class="caption">Ferrari saliendo de pits</p>
+                    </div>
+
+                    <div class="img-card" onclick="abrirModal('../imgs/2.jpg', 'Ferrari en velocidad plena')">
+                        <img src="../imgs/2.jpg" alt="Imagen 2" />
+                        <p class="caption">Ferrari en velocidad plena</p>
+                    </div>
+
+                    <div class="img-card" onclick="abrirModal('../imgs/3.jpg', 'Detalle de neumáticos en pista')">
+                        <img src="../imgs/3.jpg" alt="Imagen 3" />
+                        <p class="caption">Detalle de neumáticos en pista</p>
+                    </div>
+
+                    <div class="img-card" onclick="abrirModal('../imgs/4.jpg', 'Tribuna homenaje a Ayrton Senna')">
+                        <img src="../imgs/4.jpg" alt="Imagen 4" />
+                        <p class="caption">Tribuna homenaje a Ayrton Senna</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODAL para imagen -->
+            <div id="modal" class="modal" onclick="cerrarModal()">
+                <span class="cerrar">&times;</span>
+                <img class="modal-contenido" id="imagenModal">
+                <div id="descripcionModal" class="descripcion"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 F1 Rookie - Guía para nuevos fanáticos de la Fórmula 1</p>
+    </footer>
+</body>
+
+</html>
