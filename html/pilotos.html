@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Título de la sección</title>
+  <title>Pilotos</title>
   <link rel="stylesheet" href="../css/estilos.css" />
 </head>
 
@@ -40,7 +40,58 @@
     </div>
 
 
-    
+ <section class="galeria">
+            <div class="grid-container">
+                <p>Rooster de pilotos actuales</p>
+                <div class="grid">
+                    <div class="img-card" onclick="abrirModal('../imgs/1.jpg', 'Ferrari saliendo de pits')">
+                        <img src="../imgs/max-verstappen.avif" alt="max-verstappen" />
+                        <p class="caption">Max Verstappen N°1</p>
+                        <p class="caption">Red Bull</p>
+                    </div>
+
+                    <div class="img-card" onclick="abrirModal('../imgs/2.jpg', 'Ferrari en velocidad plena')">
+                        <img src="../imgs/Pierre Gasly.png" alt="Pierre Gasly" />
+                        <p class="caption">Pierre Gasly N°10</p>
+                        <p class="caption">Alpine</p>
+                    </div>
+
+                    <div class="img-card" onclick="abrirModal('../imgs/3.jpg', 'Detalle de neumáticos en pista')">
+                        <img src="../imgs/Kimi Antonelli.webp" alt="Kimi Antonelli" />
+                        <p class="caption">Kimi Antonelli N°12</p>
+                        <p class="caption">Mercedes</p>
+                    </div>
+
+                    <div class="img-card" onclick="abrirModal('../imgs/4.jpg', 'Tribuna homenaje a Ayrton Senna')">
+                        <img src="../imgs/fernando alonso.png" alt="Fernando Alonso" />
+                        <p class="caption">Fernando Alonso N°14</p>
+                        <p class="caption">Aston Martin</p>
+                    </div>
+
+                     <div class="img-card" onclick="abrirModal('../imgs/4.jpg', 'Tribuna homenaje a Ayrton Senna')">
+                        <img src="../imgs/Leclerc2025.png.webp" alt="Charles Leclerc" />
+                        <p class="caption">Charles Leclerc N°16</p>
+                        <p class="caption">Ferrari</p>
+                    </div>
+
+                    <div class="img-card" onclick="abrirModal('../imgs/4.jpg', 'Tribuna homenaje a Ayrton Senna')">
+                        <img src="../imgs/Carlos Sainz.avif" alt="Carlos Sainz" />
+                        <p class="caption">Carlos Sainz N°55</p>
+                        <p class="caption">Williams</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <!-- MODAL para imagen -->
+            <div id="modal" class="modal" onclick="cerrarModal()">
+                <span class="cerrar">&times;</span>
+                <img class="modal-contenido" id="imagenModal">
+                <div id="descripcionModal" class="descripcion"></div>
+            </div>
+        </section>
+
   <section id="introduccion">
     <h2>Lewis Hamilton</h2>
     <p>Lewis Hamilton es uno de los pilotos más exitosos en la historia de la Fórmula 1. Con siete títulos mundiales, ha igualado el récord de Michael Schumacher. Es reconocido tanto por su talento al volante como por su activismo fuera de las pistas.</p>
